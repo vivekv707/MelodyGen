@@ -4,7 +4,6 @@ import collections
 import numpy as np
 import pandas as pd
 import pretty_midi
-import seaborn as sns
 import tensorflow as tf
 import os
 import random
