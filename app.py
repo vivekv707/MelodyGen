@@ -178,6 +178,7 @@ def loader():
 
         generated_notes = pd.DataFrame(generated_notes, columns=(*key_order, 'start', 'end'))
         generated_notes_all[instrument] = generated_notes
+    os.remove(os.path.join(app.root_path, "output.mid"))
     out_pm = notes_to_midi_multi(generated_notes_all, out_file=os.path.join(app.root_path, "output.mid"))
 
     return "Done"
